@@ -3,7 +3,7 @@
 | NIM |  244107020214|
 | Nama |  Faiq Razzan Afifie |
 | Kelas | TI - 1I |
-| Repository | [link] (https://github.com/jti-polinema/-01-contoh-laporan-react) |
+| Repository | [link] (https://github.com/faiq191/JobSheet) |
 
 # Labs #1 Programming Fundamentals Review
 
