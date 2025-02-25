@@ -43,7 +43,7 @@ The solution is implemented in Student12.java, and below is screenshot of the re
    - evaluate()
 4. Modified updateGPA() method with validation:
 
-   ![Screenshot](img/updateGpa.png)
+   ![Screenshot](img/gpa.png)
 
 5. Explanation of the evaluate() method:
 
