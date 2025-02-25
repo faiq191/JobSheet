@@ -42,7 +42,9 @@ The solution is implemented in Student12.java, and below is screenshot of the re
    - updateGPA(double newGPA)
    - evaluate()
 4. Modified updateGPA() method with validation:
+
    ![Screenshot](img/updateGpa.png)
+
 5. Explanation of the evaluate() method:
 
 - It evaluates student performance based on GPA (gpa).
