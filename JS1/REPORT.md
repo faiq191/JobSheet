@@ -3,7 +3,7 @@
 | NIM |  244107020214|
 | Nama |  Faiq Razzan Afifie |
 | Kelas | TI - 1I |
-| Repository | [link] (https://github.com/jti-polinema/-01-contoh-laporan-react) |
+| Repository | [link] (https://github.com/faiq191/JobSheet) |
 
 # Labs #1 Programming Fundamentals Review
 
@@ -113,6 +113,7 @@ The solution is implemented in Assignment3.java, and below is screenshot of the 
 ![Screenshot](img/assignment3_3.png)
 ![Screenshot](img/assignment3_4.png)
 ![Screenshot](img/assignment3_5.png)
+
 **Brief explanaton:**
 1. Input Phase:
     - The user enters the number of courses.
