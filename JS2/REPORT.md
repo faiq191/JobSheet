@@ -42,7 +42,9 @@ The solution is implemented in Student12.java, and below is screenshot of the re
    - updateGPA(double newGPA)
    - evaluate()
 4. Modified updateGPA() method with validation:
+
    ![Screenshot](img/updateGpa.png)
+
 5. Explanation of the evaluate() method:
 
 - It evaluates student performance based on GPA (gpa).
@@ -113,10 +115,11 @@ The solution is implemented in StudentMain.java, and below is screenshot of the 
 ## 2.3 Experiment 3: Creating Constructor
 
 **Brief explanaton:**
-1. A Student object named student2 is created using the parameterized constructor.  
-2. The constructor initializes studentID, name, className, and gpa with the given values.  
-3. The updateGPA method updates the GPA from 3.5 to 3.3.  
-4. The print method displays the updated student details.  
+
+1. A Student object named student2 is created using the parameterized constructor.
+2. The constructor initializes studentID, name, className, and gpa with the given values.
+3. The updateGPA method updates the GPA from 3.5 to 3.3.
+4. The print method displays the updated student details.
 
 The solution is implemented in Student12.java, and below is screenshot of the result.
 
@@ -174,157 +177,156 @@ The solution is implemented in Lecturer12.java and LecturerMain12.java and below
 
 **Class Code**
 
- ```java
+```java
 class Lecturer12 {
-    private String lecturerID;
-    private String name;
-    private boolean status;
-    private int startYear;
-    private String expertiseField;
+   private String lecturerID;
+   private String name;
+   private boolean status;
+   private int startYear;
+   private String expertiseField;
 
-    public Lecturer12() {
-        this.lecturerID = "Unknown";
-        this.name = "Unknown";
-        this.status = false;
-        this.startYear = 0;
-        this.expertiseField = "Unknown";
-    }
+   public Lecturer12() {
+       this.lecturerID = "Unknown";
+       this.name = "Unknown";
+       this.status = false;
+       this.startYear = 0;
+       this.expertiseField = "Unknown";
+   }
 
-    public Lecturer12(String lecturerID, String name, boolean status, int startYear, String expertiseField) {
-        this.lecturerID = lecturerID;
-        this.name = name;
-        this.status = status;
-        this.startYear = startYear;
-        this.expertiseField = expertiseField;
-    }
+   public Lecturer12(String lecturerID, String name, boolean status, int startYear, String expertiseField) {
+       this.lecturerID = lecturerID;
+       this.name = name;
+       this.status = status;
+       this.startYear = startYear;
+       this.expertiseField = expertiseField;
+   }
 
-    public void print() {
-        System.out.println("Lecturer ID: " + lecturerID);
-        System.out.println("Name: " + name);
-        System.out.println("Status: " + (status ? "Active" : "Inactive"));
-        System.out.println("Start Year: " + startYear);
-        System.out.println("Expertise Field: " + expertiseField);
-    }
+   public void print() {
+       System.out.println("Lecturer ID: " + lecturerID);
+       System.out.println("Name: " + name);
+       System.out.println("Status: " + (status ? "Active" : "Inactive"));
+       System.out.println("Start Year: " + startYear);
+       System.out.println("Expertise Field: " + expertiseField);
+   }
 
-    public void setStatus(boolean status) {
-        this.status = status;
-        System.out.println("Status updated to: " + (status ? "Active" : "Inactive"));
-    }
+   public void setStatus(boolean status) {
+       this.status = status;
+       System.out.println("Status updated to: " + (status ? "Active" : "Inactive"));
+   }
 
-    public int calculateTenure(int yearNow) {
-        return yearNow - this.startYear;
-    }
+   public int calculateTenure(int yearNow) {
+       return yearNow - this.startYear;
+   }
 
-    public void changeExpertiseField(String newField) {
-        this.expertiseField = newField;
-        System.out.println("Expertise Field updated to: " + newField);
-    }
-}
- ```
-
- **Main Code**
-
- ```java
- public class CourseMain12 {
-    public static void main(String[] args) {
-        Course12 course1 = new Course12();
-        Course12 course2 = new Course12("CS101", "Data Structures", 3, 4);
-
-        System.out.println("\nDefault Course:");
-        course1.print();
-
-        System.out.println("\nParameterized Course:");
-        course2.print();
-
-        System.out.println("\nUpdating Course Details:");
-        course2.changeCredit(4);
-        course2.addHour(2);
-        course2.reduceHour(3);
-    }
+   public void changeExpertiseField(String newField) {
+       this.expertiseField = newField;
+       System.out.println("Expertise Field updated to: " + newField);
+   }
 }
 ```
 
- **Output**
+**Main Code**
 
- ![Screenshot](img/output1.png)
+```java
+public class CourseMain12 {
+   public static void main(String[] args) {
+       Course12 course1 = new Course12();
+       Course12 course2 = new Course12("CS101", "Data Structures", 3, 4);
 
- ## 2.4 Assignment 2
+       System.out.println("\nDefault Course:");
+       course1.print();
 
- **Class Code**
+       System.out.println("\nParameterized Course:");
+       course2.print();
 
- ```java
+       System.out.println("\nUpdating Course Details:");
+       course2.changeCredit(4);
+       course2.addHour(2);
+       course2.reduceHour(3);
+   }
+}
+```
+
+**Output**
+
+![Screenshot](img/output1.png)
+
+## 2.4 Assignment 2
+
+**Class Code**
+
+```java
 class Course12 {
-    private String courseID;
-    private String name;
-    private int credit;
-    private int hour;
+   private String courseID;
+   private String name;
+   private int credit;
+   private int hour;
 
-    public Course12() {
-        this.courseID = "Unknown";
-        this.name = "Unknown";
-        this.credit = 0;
-        this.hour = 0;
-    }
+   public Course12() {
+       this.courseID = "Unknown";
+       this.name = "Unknown";
+       this.credit = 0;
+       this.hour = 0;
+   }
 
-    public Course12(String courseID, String name, int credit, int hour) {
-        this.courseID = courseID;
-        this.name = name;
-        this.credit = credit;
-        this.hour = hour;
-    }
+   public Course12(String courseID, String name, int credit, int hour) {
+       this.courseID = courseID;
+       this.name = name;
+       this.credit = credit;
+       this.hour = hour;
+   }
 
-    public void print() {
-        System.out.println("Course ID: " + courseID);
-        System.out.println("Name: " + name);
-        System.out.println("Credit: " + credit);
-        System.out.println("Hour: " + hour);
-    }
+   public void print() {
+       System.out.println("Course ID: " + courseID);
+       System.out.println("Name: " + name);
+       System.out.println("Credit: " + credit);
+       System.out.println("Hour: " + hour);
+   }
 
-    public void changeCredit(int newCredit) {
-        this.credit = newCredit;
-        System.out.println("Credit updated to: " + newCredit);
-    }
+   public void changeCredit(int newCredit) {
+       this.credit = newCredit;
+       System.out.println("Credit updated to: " + newCredit);
+   }
 
-    public void addHour(int hour) {
-        this.hour += hour;
-        System.out.println("Hours increased by " + hour + ", total hours: " + this.hour);
-    }
+   public void addHour(int hour) {
+       this.hour += hour;
+       System.out.println("Hours increased by " + hour + ", total hours: " + this.hour);
+   }
 
-    public void reduceHour(int hour) {
-        if (this.hour - hour >= 0) {
-            this.hour -= hour;
-            System.out.println("Hours reduced by " + hour + ", total hours: " + this.hour);
-        } else {
-            System.out.println("Reduction not possible. Remaining hours: " + this.hour);
-        }
-    }
+   public void reduceHour(int hour) {
+       if (this.hour - hour >= 0) {
+           this.hour -= hour;
+           System.out.println("Hours reduced by " + hour + ", total hours: " + this.hour);
+       } else {
+           System.out.println("Reduction not possible. Remaining hours: " + this.hour);
+       }
+   }
 }
- ```
+```
 
- **Main Code**
+**Main Code**
 
- ```java
+```java
 public class LecturerMain12 {
-    public static void main(String[] args) {
-        Lecturer12 lecturer1 = new Lecturer12();
-        Lecturer12 lecturer2 = new Lecturer12("L001", "Dr. John Doe", true, 2010, "Computer Science");
+   public static void main(String[] args) {
+       Lecturer12 lecturer1 = new Lecturer12();
+       Lecturer12 lecturer2 = new Lecturer12("L001", "Dr. John Doe", true, 2010, "Computer Science");
 
-        System.out.println("\nDefault Lecturer:");
-        lecturer1.print();
+       System.out.println("\nDefault Lecturer:");
+       lecturer1.print();
 
-        System.out.println("\nParameterized Lecturer:");
-        lecturer2.print();
+       System.out.println("\nParameterized Lecturer:");
+       lecturer2.print();
 
-        System.out.println("\nUpdating Lecturer Details:");
-        lecturer2.setStatus(false);
-        System.out.println("Tenure: " + lecturer2.calculateTenure(2024) + " years");
-        lecturer2.changeExpertiseField("Artificial Intelligence");
-    }
+       System.out.println("\nUpdating Lecturer Details:");
+       lecturer2.setStatus(false);
+       System.out.println("Tenure: " + lecturer2.calculateTenure(2024) + " years");
+       lecturer2.changeExpertiseField("Artificial Intelligence");
+   }
 }
 
 ```
 
- **Output**
+**Output**
 
- ![Screenshot](img/output2.png)
-
+![Screenshot](img/output2.png)
