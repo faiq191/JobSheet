@@ -273,5 +273,6 @@ public class LecturerMain {
 }
 
 ```
-Output
+Output:
+
 ![Screenshot](img/ss7.png)
