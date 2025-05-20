@@ -12,4 +12,13 @@ class Student12 {
         this.midtermScore = midtermScore;
         this.finalScore = finalScore;
     }
+
+    public Student12(String nim, String name2, String studyProgram, String className) {
+        //TODO Auto-generated constructor stub
+    }
+
+    public void print() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'print'");
+    }
 }
